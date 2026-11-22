@@ -1,0 +1,27 @@
+/* 8Chess Docs — subtle green branding derived from the project logo. */
+
+:root {
+  --md-primary-fg-color: #17352e;
+  --md-primary-fg-color--light: #2b7d66;
+  --md-primary-fg-color--dark: #0f241e;
+  --md-accent-fg-color: #5a9e78;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0f241e;
+  --md-primary-fg-color--light: #2b7d66;
+  --md-primary-fg-color--dark: #091812;
+  --md-accent-fg-color: #c6ef73;
+}
+
+/* Keep the logo mark at a comfortable size in the header. */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.6rem;
+  width: auto;
+}
+
+/* Make external links in the "related repositories" lists easy to spot. */
+.md-typeset a.md__external {
+  text-underline-offset: 0.2em;
+}

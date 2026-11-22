@@ -1,0 +1,25 @@
+[project]
+name = "8chess-docs"
+version = "0.1.0"
+description = "Documentation site for the 8Chess chess engine"
+readme = "README.md"
+authors = [
+    { name = "8Chess Team" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+8chess-docs = "_8chess_docs:main"
+
+[tool.uv.build-backend]
+module-name = "_8chess_docs"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "zensical>=0.1.3",
+]
